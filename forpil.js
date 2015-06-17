@@ -3,7 +3,7 @@ if (Meteor.isClient) {
   Session.setDefault('counter', 0);
 
   var days = function() {
-    return Math.floor((new Date() - new Date(2015, 5, 9))/86400000);
+    return Math.floor((new Date() - new Date(2015, 5, 10))/86400000) + 1;
   };
 
 
@@ -12,7 +12,7 @@ if (Meteor.isClient) {
       return Session.get('counter');
     },
     start: function() {
-      return "2015년 6월 9일(화)";
+      return "2015년 6월 10일(수)";
     },
     days: function() {
       return days();
