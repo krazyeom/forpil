@@ -1,0 +1,17 @@
+<head>
+  <title>forpil</title>
+</head>
+
+<body>
+  <h1>Congratulations to pil and pil's girl friend</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <p>필과 그녀가 만난지<span class="days"> {{days}}</span> 일째</p>
+  <p>{{start}}에 만났습니다.</p>
+  10일까지 {{dday 10}}일 남았습니다.<br>
+  100일까지 {{dday 100}}일 남았습니다.<br>
+  365일까지 {{dday 365}}일 남았습니다.<br>
+</template>
